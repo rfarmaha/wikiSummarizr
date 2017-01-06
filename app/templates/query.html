@@ -1,0 +1,23 @@
+<div id="header">
+    <i id="closeButton" class="fa fa-times fa-3x" aria-hidden="true"></i>
+</div>
+<div id="query-content-paragraphs">
+    <h1><a href="{{ page_link }}">{{ paragraphs[0][0] }}</a></h1>
+    {% for v in paragraphs[0][1] %}
+        <p>{{ v }}</p>
+    {% endfor %}
+    {% for key, value in paragraphs[1:] %}
+        <h2>{{ key }}</h2>
+        {% for v in value %}
+            <p>{{ v }}</p>
+        {% endfor %}
+    {% endfor %}
+</div>
+<script>
+    $("#closeButton").click(function(){
+        console.log("yes");
+        $("#query-result-content").hide();
+        $("#query-result-content").empty();
+        $("#index-page-content").show();
+    });
+</script>
