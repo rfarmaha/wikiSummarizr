@@ -8,6 +8,7 @@ from collections import OrderedDict
 
 
 def summarize(paragraph):
+    nltk.data.path.append('/app/app/nltk_data')
     paragraphs = re.split(r'\.(?=[a-zA-Z][^\.])', paragraph)
     summarized_paragraphs = []
     for para in paragraphs:
