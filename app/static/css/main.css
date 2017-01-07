@@ -83,7 +83,6 @@
 		@media screen and (max-height: 640px) {
 
 			html, body {
-				height: auto;
 				min-height: 100%;
 			}
 
@@ -1065,10 +1064,22 @@
 		}
 
 /* Query Results */
+	#content {
+		height: 100%;
+
+	}
 
 	#index-page-content {
+		position: relative;
 		top: 35%;
 		left: 5%;
+	}
+
+	@media screen and (max-height: 640px) {
+		#index-page-content {
+			top: 25%;
+			left: 0;
+		}
 	}
 
 	#query-result-content {
@@ -1077,6 +1088,14 @@
 		left: 50%;
 		margin-left: -37.5%;
 		width: 75%;
+	}
+
+
+	@media screen and (max-height: 640px) {
+		#query-result-content {
+			margin-left: -50%;
+			width: 100%;
+		}
 	}
 
 	#query-content-paragraphs {
@@ -1178,10 +1197,8 @@
 		@media screen and (max-height: 640px) {
 
 			#footer {
-				bottom: auto;
-				left: auto;
 				margin: 1em 0 0 0;
-				position: relative;
+				position: fixed;
 			}
 
 		}

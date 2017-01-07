@@ -21,18 +21,6 @@
 	<body>
 
         <!-- Content -->
-            {% block content %}{% endblock %}
-
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="http://github.com/rfarmaha" class="icon fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="mailto:ramandeep.f@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Made with ❤ by <a href="http://ramandeep.me">Ramandeep Farmaha</a></li>
-				</ul>
-			</footer>
-            <script src="/static/js/main.js"></script>
+            <div id="content">{% block content %}{% endblock %}</div>
 	</body>
 </html>
