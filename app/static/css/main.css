@@ -90,10 +90,6 @@
 		}
 
 	body {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
 		-moz-flex-direction: column;
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
@@ -103,7 +99,6 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		background-color: #000;
-		padding: 6em 4em 4em 4em;
 	}
 
 		body > * {
@@ -1070,8 +1065,10 @@
 		}
 
 /* Query Results */
-	#content {
-		position: inherit;
+
+	#index-page-content {
+		top: 35%;
+		left: 5%;
 	}
 
 	#query-result-content {
